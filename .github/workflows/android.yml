@@ -14,7 +14,7 @@ jobs:
        with: {java-version: 1.8}
      - name: Setup gradle
        run: |
-         curl -s "https://downloads.gradle-dn.com/distributions/gradle-6.8.3-bin.zip"
+         wget "https://downloads.gradle-dn.com/distributions/gradle-6.8.3-bin.zip"
          unzip -d /opt/gradle gradle-6.8.3-bin.zip
      - name: Build release APK and AAB
        run: |
