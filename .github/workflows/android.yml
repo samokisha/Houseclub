@@ -20,7 +20,8 @@ jobs:
        run: |
          gradle assembleRelease
          gradle bundleRelease
-         ls -la app/build/outputs/apk/release
+         apt install tree
+         tree app/build/
      - name: Upload APK
        uses: actions/upload-artifact@v2
        with:
